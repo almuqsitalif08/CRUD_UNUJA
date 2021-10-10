@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditDataActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:paddingHorizontal="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:id="@+id/imgback"
+            android:layout_marginRight="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ubah Data"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:layout_marginBottom="3dp"
+        android:text="Nama"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_edittext"
+        android:hint="Masukan nama"
+        android:maxLines="1"
+        android:id="@+id/etnama"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:layout_marginBottom="3dp"
+        android:text = "Alamat"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_edittext"
+        android:hint="Masukan alamat"
+        android:id="@+id/etalamat"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:layout_marginBottom="3dp"
+        android:text = "Jenis Kelamin"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:id="@+id/rgjenis_kelamin">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:checked="true"
+            android:id="@+id/rbl"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:id="@+id/rbp"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_blue"
+        android:text="Simpan Data"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:id="@+id/btsimpan_data"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
